@@ -1,0 +1,207 @@
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  font-size: 18px !important;
+  font-family: "Public Sans", sans-serif !important;
+}
+a {
+  text-decoration: none !important;
+  color: #ffff !important;
+}
+main {
+  flex: 1 !important;
+  overflow: hidden !important;
+}
+/* --------- texto ---------- */
+span {
+  font-size: 0.6rem;
+  font-weight: 300 !important;
+  color: hsl(233, 8%, 62%) !important;
+}
+p {
+  font-weight: 300 !important;
+  text-align: center;
+  font-size: 14px !important;
+}
+h1 {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+}
+h2 {
+  font-weight: 700 !important;
+  text-align: center;
+}
+h3 {
+  font-weight: 400 !important;
+}
+h4 {
+  font-weight: 400 !important;
+  font-size: 1.05rem !important;
+  text-align: start;
+}
+.p-article {
+  font-size: 0.85rem !important;
+  text-align: start !important;
+}
+/* -------- fondo principal ---------- */
+.bg-primary {
+  background: linear-gradient(
+    45deg,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%),
+    hsl(233, 26%, 24%)
+  ) !important;
+}
+/* --------- header ---------- */
+.nav-item p {
+  /* background-color: #84e2a6 !important; */
+  margin: 0px;
+  padding: 0px;
+  height: 0.2rem;
+  transition: background-color 1.1s ease, transform 0.2s ease;
+  opacity: 0;
+  width: 3.5rem;
+}
+.nav-item:hover p {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.btn-unico {
+  opacity: 1;
+}
+.btn-unico:hover {
+  opacity: 0.8;
+}
+/* ---------- main ------------ */
+.columna-1 {
+  order: 2;
+  text-align: center;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.columna-2 {
+  order: 1;
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: 20px;
+  position: relative;
+  height: 340px !important;
+}
+
+.primeras-col {
+  height: auto !important;
+}
+/* ------------imagenes------------- */
+.img-celulares {
+  position: absolute !important;
+  right: 20px;
+  top: -125px;
+  object-fit: cover;
+  width: 90%;
+  height: 700px;
+}
+.img-fondo-pc {
+  opacity: 0;
+  position: absolute !important;
+  top: 0px !important;
+}
+.img-fondo-cel {
+  position: relative !important;
+  top: -30px !important;
+  opacity: 1;
+  object-fit: cover;
+  height: 330px !important;
+  width: 100% !important;
+}
+.imagen-clara {
+  /* .imagen-oscura
+    filter: invert(1) brightness(0.5); */
+  filter: brightness(4);
+}
+/* --------------- footer ---------------- */
+footer {
+  background-color: hsl(233, 26%, 24%);
+}
+
+/* ------------- pc-escritorio ------------- */
+@media (min-width: 576px) {
+  .nav-item p {
+    width: auto;
+  }
+  p {
+    font-size: 18px !important;
+    text-align: start !important;
+  }
+  .primeras-col {
+    height: 500px !important;
+  }
+
+  .columna-1 {
+    order: 0;
+    text-align: start;
+    padding-right: 6rem !important;
+  }
+  .columna-2 {
+    order: 1;
+  }
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    text-align: start !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+  h3 {
+    text-align: start !important;
+  }
+  h4 {
+    font-size: 1.5rem !important;
+  }
+
+  .t-s2-ancho {
+    width: 60% !important;
+  }
+  .text-s2 {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .img-fondo-pc {
+    position: absolute !important;
+    left: 70px !important;
+    top: -180px !important;
+    /* object-fit: cover !important; */
+    opacity: 1;
+    /* width: 900px;
+    height: 700px; */
+    width: 150%;
+    height: 150%;
+  }
+  .img-celulares {
+    position: absolute !important;
+    right: -200px;
+    top: -75px;
+    object-fit: cover;
+    width: 600px;
+    height: 700px;
+  }
+  .img-fondo-cel {
+    position: absolute !important;
+    opacity: 0;
+  }
+
+  /* -------- footer --------- */
+
+  .a-hover:hover {
+    color: hsl(136, 65%, 51%) !important;
+  }
+  .img-hover:hover img {
+    background-image: url(../images/icon-twitter.svg);
+    /* ---- reemplazar imagen blanca por una verde ----- */
+  }
+  .gap-nav {
+    gap: 150px !important;
+  }
+}
