@@ -194,6 +194,10 @@ footer {
   }
 
   /* -------- footer --------- */
+  footer a {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+  }
 
   .a-hover:hover {
     color: hsl(136, 65%, 51%) !important;
