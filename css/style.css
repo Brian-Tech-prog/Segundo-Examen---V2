@@ -7,7 +7,7 @@ body {
 }
 a {
   text-decoration: none !important;
-  color: #ffff !important;
+  color: rgb(0, 0, 0) !important;
 }
 main {
   flex: 1 !important;
@@ -86,7 +86,7 @@ h4 {
   margin: 0px !important;
   margin-bottom: 20px;
   position: relative;
-  height: 340px !important;
+  height: auto !important;
 }
 
 .primeras-col {
@@ -99,6 +99,7 @@ h4 {
   top: -125px;
   object-fit: cover;
   width: 90%;
+
   height: 700px;
 }
 .img-fondo-pc {
